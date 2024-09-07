@@ -14,12 +14,19 @@ function showToast(e) {
     
     case "error":
       toast.innerHTML = errorMsg;
+      toast.classList.add("error");
       break;
 
     case "invalid":
       toast.innerHTML = invalidMsg;
+      toast.classList.add("invalid");
       break;
   }
+
+  setTimeout(() => {
+    toast.remove();
+  }, 6000);
+
   toastBox.appendChild(toast);
 }
 
