@@ -25,7 +25,7 @@ function showToast(e) {
 
   setTimeout(() => {
     toast.remove();
-  }, 6000);
+  }, 5000);
 
   toastBox.appendChild(toast);
 }
